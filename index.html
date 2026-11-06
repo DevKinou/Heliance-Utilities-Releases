@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>MyBad Utilities</title>
+<title>Heliance Utilities</title>
 <meta name="description" content="Nettoyer, optimiser, diagnostiquer et mettre à jour son PC Windows, gratuitement.">
 <link rel="icon" href="logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,21 +47,21 @@
 <div class="page">
   <header>
     <img src="logo.png" alt="">
-    <b>MYBAD UTILITIES</b>
+    <b>HELIANCE UTILITIES</b>
     <nav>
       <a href="#fonctions" data-t="navFeatures">Fonctions</a>
-      <a href="https://github.com/DevKinou/MyBad-Utilities-Releases/releases" data-t="navReleases">Versions</a>
-      <a href="https://github.com/DevKinou/MyBad-Utilities-Releases/issues" data-t="navHelp">Aide</a>
+      <a href="https://github.com/DevKinou/Heliance-Utilities-Releases/releases" data-t="navReleases">Versions</a>
+      <a href="https://github.com/DevKinou/Heliance-Utilities-Releases/issues" data-t="navHelp">Aide</a>
     </nav>
   </header>
 
   <section class="hero">
-    <h1>MyBad Utilities</h1>
+    <h1>Heliance Utilities</h1>
     <p data-t="tagline">Nettoyer, optimiser, diagnostiquer et mettre à jour votre PC Windows. Gratuit, sans pub, et rien n'est modifié sans votre accord.</p>
     <div class="boutons">
-      <a class="bouton principal" id="setup" href="https://github.com/DevKinou/MyBad-Utilities-Releases/releases/latest/download/MyBadUtilities-Setup.exe">
+      <a class="bouton principal" id="setup" href="https://github.com/DevKinou/Heliance-Utilities-Releases/releases/latest/download/HelianceUtilities-Setup.exe">
         <span data-t="setup">TÉLÉCHARGER L'INSTALLATEUR</span><small data-t="setupHint">Recommandé · sans droits administrateur</small></a>
-      <a class="bouton" id="portable" href="https://github.com/DevKinou/MyBad-Utilities-Releases/releases/latest/download/MyBadUtilities.exe">
+      <a class="bouton" id="portable" href="https://github.com/DevKinou/Heliance-Utilities-Releases/releases/latest/download/HelianceUtilities.exe">
         <span data-t="portable">VERSION PORTABLE</span><small data-t="portableHint">Un seul fichier, sans installation</small></a>
     </div>
     <div class="version" id="version" data-t="versionLoading">Windows 10 et 11, 64 bits · mises à jour automatiques</div>
@@ -85,8 +85,8 @@
   <div class="note" data-t="admin">Lancée en administrateur, l'appli a accès à toutes ses fonctions ; sinon, elle tourne en mode limité et le signale.</div>
 
   <footer>
-    <span data-t="footer">Fait par MyBad. Une question, un bug ?</span>
-    <a href="https://github.com/DevKinou/MyBad-Utilities-Releases/issues" data-t="report">Signaler un problème</a>
+    <span data-t="footer">Fait par Heliance. Une question, un bug ?</span>
+    <a href="https://github.com/DevKinou/Heliance-Utilities-Releases/issues" data-t="report">Signaler un problème</a>
   </footer>
 </div>
 <script>
@@ -110,7 +110,7 @@
     installTitle: "Installation",
     smartscreen: "On first launch, Windows may show \"Windows protected your PC\": the app isn't signed yet. Click \"More info\", then \"Run anyway\".",
     admin: "Run as administrator, the app can use all its features; otherwise it runs in limited mode and says so.",
-    footer: "Made by MyBad. A question, a bug?", report: "Report a problem",
+    footer: "Made by Heliance. A question, a bug?", report: "Report a problem",
   };
   const english = !(navigator.language || "fr").toLowerCase().startsWith("fr");
   if (english) {
@@ -118,7 +118,7 @@
     document.querySelectorAll("[data-t]").forEach(e => { if (en[e.dataset.t]) e.textContent = en[e.dataset.t]; });
   }
   // Dernière version publiée, pour l'afficher sous les boutons.
-  fetch("https://api.github.com/repos/DevKinou/MyBad-Utilities-Releases/releases/latest")
+  fetch("https://api.github.com/repos/DevKinou/Heliance-Utilities-Releases/releases/latest")
     .then(r => r.ok ? r.json() : null)
     .then(r => {
       if (!r) return;
